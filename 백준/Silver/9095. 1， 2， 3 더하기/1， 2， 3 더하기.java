@@ -15,24 +15,24 @@ public class Main {
         bw.flush();
         bw.close();
     }
-    public static void add(int num) {
+    public static void add(int num){
 
-        if (num <= n) {
-            if (num == n) {
+            
+            if(num==n){
                 count++;
-            } else if (num < n) {
-                if (num + 1 <= n) {
-                    add(num + 1);
+            }
+            else if(num<n){
+                if(num+1<=n){
+                    add(num+1);
                 }
-                if (num + 2 <= n) {
-                    add(num + 2);
+                if(num+2<=n){
+                    add(num+2);
                 }
-                if (num + 3 <= n) {
-                    add(num + 3);
+                if(num+3<=n){
+                    add(num+3);
                 }
             }
 
         }
-    }
     }
 
